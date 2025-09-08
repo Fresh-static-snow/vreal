@@ -18,7 +18,6 @@ api.interceptors.response.use(
   (res) => res,
   async (error) => {
     const originalRequest = error.config;
-    console.log("originalRequest");
 
     if (
       originalRequest.url === "/auth/refresh" ||

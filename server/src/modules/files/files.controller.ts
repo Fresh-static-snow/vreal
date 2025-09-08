@@ -58,7 +58,7 @@ export class FilesController {
   async uploadFiles(@Req() req, @Body() body: { folderId?: string }) {
     const createdFiles = [];
     const files = (req.files as Express.Multer.File[]) || [];
-    console.log(req.files, 'req.files');
+
     for (const file of files) {
       let folder: Folder | undefined;
       let folderPath = '';
