@@ -57,7 +57,6 @@ function RouteComponent() {
     }
   };
 
-  // uploadFiles function for useMutation
   const uploadFiles = async (filesToUpload: File[]) => {
     const formData = new FormData();
     filesToUpload.forEach((file) => {
@@ -128,7 +127,6 @@ function RouteComponent() {
             )}
           </Box>
 
-          {/* Create subfolder */}
           <Box mt="md">
             <Text mb="xs">Создать подпапку:</Text>
             <Group>
